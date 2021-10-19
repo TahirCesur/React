@@ -31,12 +31,10 @@ const Form4 = () => {
 
     const form = e.target;
 
-    if (!form.checkValidity()) {
-      setValidated(true);
-      return;
-    }
-
+    const kontrol = form.checkValidity();
     setValidated(true);
+
+    if (!kontrol) return;
 
     setLoading(true);
     setMesaj("");

@@ -35,9 +35,9 @@ $(document).ready(function () {
         }
     }
 
-    
+
     //SmothScroll
-    $('.header .navbar-nav a, .to-contact, .scroll-down a').on('click', function(event) {
+    $('.header .navbar-nav a, .to-contact, .scroll-down a').on('click', function (event) {
         var $anchor = $(this);
         $root.stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 60
@@ -47,7 +47,7 @@ $(document).ready(function () {
     });
 
     //SideBar Smooth Scroll
-    $('.sidebar .navbar-nav a, .sidebar .list-group a').on('click', function(event) {
+    $('.sidebar .navbar-nav a, .sidebar .list-group a').on('click', function (event) {
         var $anchor = $(this);
         $root.stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 0
@@ -57,23 +57,23 @@ $(document).ready(function () {
 
 
     //SidebarToggler
-    
+
     var $sidebarToggler = $('.sidebar-toggler');
     var $sidebar = $('.sidebar');
     var $pageContent = $('.page-content');
 
-    $sidebarToggler.on('click', function(){
+    $sidebarToggler.on('click', function () {
         $(this).toggleClass('move lni-chevron-left lni-menu');
         $sidebar.toggleClass('hide');
         // $pageContent.toggleClass('full-width');
     });
 
-    if($window.width() < 1199){
+    if ($window.width() < 1199) {
         $sidebarToggler.addClass('move lni-menu');
         $sidebarToggler.removeClass('lni-chevron-left');
         $sidebar.addClass('hide');
         $pageContent.addClass('full-width');
-        $('.sidebar .navbar-nav a, .sidebar .list-group a').on('click', function(){
+        $('.sidebar .navbar-nav a, .sidebar .list-group a').on('click', function () {
             setTimeout(function () {
                 $sidebarToggler.toggleClass('move lni-chevron-left lni-menu');
                 $sidebar.toggleClass('hide');
@@ -82,10 +82,10 @@ $(document).ready(function () {
         });
     }
 
-    
+
     // Theme Option
-    
-    $('.color-scheme li .dark-scheme').on('click', function(){
+
+    $('.color-scheme li .dark-scheme').on('click', function () {
         $("body").addClass('westin-dark');
         $('.color-scheme li a').removeClass('active');
         $(this).addClass('active');
@@ -93,7 +93,7 @@ $(document).ready(function () {
         $("#logo").attr("src", 'assets/img/westin-logo-dark.png');
     });
 
-    $('.color-scheme li .light-scheme').on('click', function(){
+    $('.color-scheme li .light-scheme').on('click', function () {
         $("body").removeClass('westin-dark');
         $('.color-scheme li a').removeClass('active');
         $(this).addClass('active');
@@ -101,70 +101,70 @@ $(document).ready(function () {
         $("#logo").attr("src", 'assets/img/westin-logo.png');
     });
 
-    $('.theme-skin li .border-skin').on('click', function(){
+    $('.theme-skin li .border-skin').on('click', function () {
         $("body").addClass('border-style-demo');
         $('.theme-skin li a').removeClass('active');
         $(this).addClass('active');
     });
 
-    $('.theme-skin li .flat-skin').on('click', function(){
+    $('.theme-skin li .flat-skin').on('click', function () {
         $("body").removeClass('border-style-demo');
         $('.theme-skin li a').removeClass('active');
         $(this).addClass('active');
     });
 
-    $("ul.pattern .color1").on('click', function(){
+    $("ul.pattern .color1").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/azure.css"), !1
     });
-    $("ul.pattern .color2").on('click', function(){
+    $("ul.pattern .color2").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/blue.css"), !1
     });
-    $("ul.pattern .color3").on('click', function(){
+    $("ul.pattern .color3").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/purple.css"), !1
     });
-    $("ul.pattern .color4").on('click', function(){
+    $("ul.pattern .color4").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/dark-purple.css"), !1
     });
-    $("ul.pattern .color5").on('click', function(){
+    $("ul.pattern .color5").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/golden.css"), !1
     });
-    $("ul.pattern .color6").on('click', function(){
+    $("ul.pattern .color6").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/green.css"), !1
     });
-    $("ul.pattern .color7").on('click', function(){
+    $("ul.pattern .color7").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/citrus.css"), !1
     });
-    $("ul.pattern .color8").on('click', function(){
+    $("ul.pattern .color8").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/light-orange.css"), !1
     });
-    $("ul.pattern .color9").on('click', function(){
+    $("ul.pattern .color9").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/orange.css"), !1
     });
-    $("ul.pattern .color10").on('click', function(){
+    $("ul.pattern .color10").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/red.css"), !1
     });
-    $("ul.pattern .color11").on('click', function(){
+    $("ul.pattern .color11").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/pink.css"), !1
     });
-    $("ul.pattern .color12").on('click', function(){
+    $("ul.pattern .color12").on('click', function () {
         return $("#option-color").attr("href", "assets/css/color/mono.css"), !1
     });
-    $("#color-switcher .pallet-button").on('click', function(){
+    $("#color-switcher .pallet-button").on('click', function () {
         return $("#color-switcher .color-pallet").toggleClass('show'), !1
     })
-    $("ul.pattern .color13").on('click', function(){
+    $("ul.pattern .color13").on('click', function () {
         return $("#option-color-two").attr("href", "assets/css/color/pink.css"), !1
     });
-    $("ul.pattern .color14").on('click', function(){
+    $("ul.pattern .color14").on('click', function () {
         return $("#option-color-two").attr("href", "assets/css/color/sky-blue.css"), !1
     });
-    $("ul.pattern .color15").on('click', function(){
+    $("ul.pattern .color15").on('click', function () {
         return $("#option-color-two").attr("href", "assets/css/color/golden.css"), !1
     });
 
     //Typed Js
     var $element = $(".element");
-    if($element.length){
+    if ($element.length) {
         var options = {
             strings: $element.attr('data-elements').split(','),
             typeSpeed: 100,
@@ -178,17 +178,17 @@ $(document).ready(function () {
 
     //Magnific Popup
     if (('.portfolio-items').length > 0) {
-        $('.portfolio-items').each(function() {
+        $('.portfolio-items').each(function () {
             $(this).magnificPopup({
                 delegate: '.js-zoom-gallery',
                 type: 'image',
                 gallery: {
-                    enabled:true
+                    enabled: true
                 }
             });
         });
     }
-    
+
 
     //Testimonial
 
@@ -205,20 +205,19 @@ $(document).ready(function () {
         rtl: true,
     });
 
-   
 
 });
 
-$window.on("load", (function() {
+$window.on("load", (function () {
     $("#angela-preloader").addClass("loaded");
 
-        if ($("#angela-preloader").hasClass("loaded")) {
-            $("#angela-preloader").delay(900).queue(function () {
-                $(this).remove();
-            });
-        }
+    if ($("#angela-preloader").hasClass("loaded")) {
+        $("#angela-preloader").delay(900).queue(function () {
+            $(this).remove();
+        });
+    }
 
-         // init Isotope
+    // init Isotope
     var initial_items = $('#showMore-initials').data("initial");
     var next_items = $('#showMore-initials').data("next");
     var $pfilter = $('#portfolio-filter');
@@ -227,9 +226,9 @@ $window.on("load", (function() {
     $grid.isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'masonry',
-        isOriginLeft:false,
+        isOriginLeft: false,
     });
-    $pfilter.find('a').on("click",function() {
+    $pfilter.find('a').on("click", function () {
         var filterValue = $(this).attr('data-filter');
         $pfilter.find('a').removeClass('active');
         $(this).addClass('active');
@@ -239,13 +238,14 @@ $window.on("load", (function() {
         updateFilterCounts();
         return false;
     });
+
     function updateFilterCounts() {
         var itemElems = $grid.isotope('getFilteredItemElements');
         var count_items = $(itemElems).length;
         if (count_items > initial_items) {
             $showMore.show();
             $showMore.parent('.button-border').addClass('ml-2 ml-sm-4').removeClass('p-0');
-            
+
         } else {
             $showMore.hide();
             $showMore.parent('.button-border').removeClass('ml-2 ml-sm-4').addClass('p-0');
@@ -255,7 +255,7 @@ $window.on("load", (function() {
         }
         var index = 0;
 
-        $(itemElems).each(function() {
+        $(itemElems).each(function () {
             if (index >= initial_items) {
                 $(this).addClass('visible_item');
             }
@@ -263,10 +263,11 @@ $window.on("load", (function() {
         });
         $grid.isotope('layout');
     }
+
     function showNextItems(pagination) {
         var itemsMax = $('.visible_item').length;
         var itemsCount = 0;
-        $('.visible_item').each(function() {
+        $('.visible_item').each(function () {
             if (itemsCount < pagination) {
                 $(this).removeClass('visible_item');
                 itemsCount++;
@@ -278,11 +279,12 @@ $window.on("load", (function() {
         }
         $grid.isotope('layout');
     }
+
     // function that hides items when page is loaded
     function hideItems(pagination) {
         var itemsMax = $('.portfolio-item').length;
         var itemsCount = 0;
-        $('.portfolio-item').each(function() {
+        $('.portfolio-item').each(function () {
             if (itemsCount >= pagination) {
                 $(this).addClass('visible_item');
             }
@@ -294,12 +296,13 @@ $window.on("load", (function() {
         }
         $grid.isotope('layout');
     }
-    $showMore.on('click', function(e) {
+
+    $showMore.on('click', function (e) {
         e.preventDefault();
         showNextItems(next_items);
     });
-hideItems(initial_items);
-        
+    hideItems(initial_items);
+
 
 }));
 $window.on('scroll', function () {
@@ -311,7 +314,7 @@ $window.on('scroll', function () {
     } else {
         $returnToTop.removeClass('show');
     }
-    $returnToTop.on('click', function(){
+    $returnToTop.on('click', function () {
         $root.stop().animate({
             scrollTop: 0
         }, 1500);
@@ -321,7 +324,7 @@ $window.on('scroll', function () {
     //Counted Number
     var scroll = $window.scrollTop();
     var countId = $('#count-up');
-    if (countId.length){
+    if (countId.length) {
         var winH = $window.height(),
             countOffset = countId.offset().top;
         if (scroll + winH > countOffset) {
@@ -334,7 +337,7 @@ $window.on('scroll', function () {
 
     var scroll = $window.scrollTop();
     var skillsDiv = $('#skills');
-    if(skillsDiv.length > 0){
+    if (skillsDiv.length > 0) {
         var winH = $window.height(),
             skillsT = skillsDiv.offset().top;
         if (scroll + winH > skillsT) {
@@ -345,8 +348,8 @@ $window.on('scroll', function () {
             });
         }
     }
-    
-    
+
+
 });
 
 function validateEmail(email) {
@@ -355,56 +358,57 @@ function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
+
 function sendEmail() {
 
 
-    var name     = $('#name').val();
-    var family   = $('#family').val();
-    var email    = $('#email').val();
-    var phone    = $('#phone').val();
+    var name = $('#name').val();
+    var family = $('#family').val();
+    var email = $('#email').val();
+    var phone = $('#phone').val();
     var comments = $('#comments').val();
 
-    if(!name){
+    if (!name) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('First Name is required');
-    } else if(!family){
+    } else if (!family) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Last Name is required');
-    } else if(!email){
+    } else if (!email) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Email is required');
-    } else if(!validateEmail(email)){
+    } else if (!validateEmail(email)) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Email is not valid');
-    } else if(!phone){
+    } else if (!phone) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('phone is required');
-    } else if(!comments){
+    } else if (!comments) {
         $('#message').toast('show').addClass('bg-danger').removeClass('bg-success');
         $('.toast-body').html('Comments is required');
-    }else {
+    } else {
         $.ajax({
             type: 'POST',
             data: $("#contactForm").serialize(),
-            url:  "sendEmail.php",
-            beforeSend: function() {
+            url: "sendEmail.php",
+            beforeSend: function () {
                 $('#submit-btn').html('<span class="spinner-border spinner-border-sm"></span> Loading..');
             },
-            success: function(data) {
+            success: function (data) {
                 $('#submit-btn').html('Submit');
                 var myObj = JSON.parse(data);
-                if(myObj['status']=='Congratulation'){
+                if (myObj['status'] == 'Congratulation') {
                     $('#message').toast('show').addClass('bg-success').removeClass('bg-danger bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Error'){
+                    $('.toast-body').html('<strong>' + myObj['status'] + ' : </strong> ' + myObj['message']);
+                } else if (myObj['status'] == 'Error') {
                     $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
-                }else if(myObj['status']=='Warning'){
+                    $('.toast-body').html('<strong>' + myObj['status'] + ' : </strong> ' + myObj['message']);
+                } else if (myObj['status'] == 'Warning') {
                     $('#message').toast('show').addClass('bg-warning').removeClass('bg-success bg-danger');
-                    $('.toast-body').html('<strong>'+ myObj['status'] +' : </strong> '+ myObj['message']);
+                    $('.toast-body').html('<strong>' + myObj['status'] + ' : </strong> ' + myObj['message']);
                 }
             },
-            error: function(xhr) {
+            error: function (xhr) {
                 $('#submit-btn').html('Submit');
                 $('#message').toast('show').addClass('bg-danger').removeClass('bg-success bg-warning');
                 $('.toast-body').html('<strong> Error : </strong> Something went wrong, Please try again.');

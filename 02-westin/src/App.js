@@ -11,20 +11,20 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
-  return (
-    <div>
-      <Preloader />
-      <Header />
-      <Banner />
-      <About />
-      <Services />
-      <Portfolio />
-      <Testimonal />
-      <Blog />
-      <Contact />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Preloader/>
+            <Header/>
+            <Banner/>
+            <About/>
+            <Services/>
+            <Portfolio/>
+            <Testimonal/>
+            <Blog/>
+            <Contact/>
+            <Footer/>
+        </div>
+    );
 };
 
 export default App;

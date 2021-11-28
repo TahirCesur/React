@@ -1,33 +1,36 @@
 import React from "react";
 
+// Westin yazısının olduğu ilk ksımdır...
+// Hazır aldığımız formattan sadece class ları className yapmış olduk...
+
 const Preloader = () => {
-    return (
-        <div id="angela-preloader">
-            <div className="preloader">
-                <div className="spinner"></div>
-                <div className="loader">
+  return (
+    <div id="angela-preloader">
+      <div className="preloader">
+        <div className="spinner"></div>
+        <div className="loader">
           <span data-text="W" className="letter-animation">
             W
           </span>
-                    <span data-text="E" className="letter-animation">
+          <span data-text="E" className="letter-animation">
             E
           </span>
-                    <span data-text="S" className="letter-animation">
+          <span data-text="S" className="letter-animation">
             S
           </span>
-                    <span data-text="T" className="letter-animation">
+          <span data-text="T" className="letter-animation">
             T
           </span>
-                    <span data-text="I" className="letter-animation">
+          <span data-text="I" className="letter-animation">
             I
           </span>
-                    <span data-text="N" className="letter-animation">
+          <span data-text="N" className="letter-animation">
             N
           </span>
-                </div>
-            </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Preloader;

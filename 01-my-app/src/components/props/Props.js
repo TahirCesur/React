@@ -1,9 +1,5 @@
 const Props = (props) => {
-    return (
-        <h1>
-            {props.ad} {props.soyad} hoşgeldin
-        </h1>
-    );
+  return <h1>{props.name} Hoşgeldiniz...</h1>;
 };
 
 export default Props;

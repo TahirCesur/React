@@ -53,3 +53,6 @@ import ReactDOM from "react-dom";
 */
 // Not ; 1 ve 2. satırdaki 2 importta node_modules kütühanesi ile bağlantı kurar..
 // Olmazsa olmazdır...
+
+//TODO--> src klasörüne component klaörü açıp iç içe klasörlerle componentler oluşturabiliriz..
+//? Component isimleri büyük harfle başlamalıdır..

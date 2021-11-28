@@ -1,27 +1,28 @@
 @font-face {
-    font-family: "DS-Digital";
-    src: url("DS-DIGI.TTF");
+  font-family: "DS-Digital";
+  src: url("DS-DIGI.TTF");
 }
 
 .clock-container {
-    font-family: "DS-Digital";
-    display: flex;
-    background-color: black;
-    color: chartreuse;
-    padding: 0.5rem;
-    align-items: center;
-    justify-content: center;
+  font-family: "DS-Digital";
+  display: flex; /* Çocukları yani child ları yanyana getirir */
+  background-color: black;
+  color: chartreuse;
+  padding: 0.5rem;
+  align-items: center; /* dikeyde ortalar */
+  justify-content: center; /* yatayda ortalar */
 }
 
 .clock {
-    font-size: 4rem;
-    padding-right: 1rem;
+  font-size: 5rem;
+  padding-right: 0.7 rem; /* saat ile tarihin arasını açmak için */
 }
 
 .date {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .day {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
+/* Yorum satırı */

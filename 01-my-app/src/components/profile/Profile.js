@@ -1,10 +1,11 @@
 import React from "react";
 import "./profile.css";
+// 2. satırda css dosyasını import ettik..
 
 const Profile = (props) => {
   console.log(props);
 
-  // DESTRUCTERING
+  //! DESTRUCTERING (Soru Olarak gelebilir mülakatlarda...)
 
   /* İLKEL YÖNTEM
     const avatar = props.avatar;
@@ -13,7 +14,7 @@ const Profile = (props) => {
     const shot = props.shot;
     const followers = props.followers;
     const following = props.following;
-    */
+  */
 
   /* PROF YÖNTEM */
   const { avatar, name, location, shot, followers, following } = props;
@@ -51,3 +52,5 @@ const Profile = (props) => {
 };
 
 export default Profile;
+
+/* props ları normal de başka dosyadan gödermiştik fakat proje haline gelince gittiler */

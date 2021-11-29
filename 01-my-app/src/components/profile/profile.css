@@ -3,23 +3,23 @@
 .person-card {
   display: inline-block;
   border: 1px solid rgb(172, 172, 172);
-  border-radius: 0.7rem;
+  border-radius: 0.7rem; /* Kenarları yuvarladık */
   width: 200px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; /* @import ederek ekledik */
 }
 
 .person-bg {
   height: 10rem;
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  border-radius: 0.7rem 0.7rem 0 0;
-  position: relative;
+  background-position: center center; /* resmi merkeze ekledik */
+  background-repeat: no-repeat; /* resim küçükse kendini tekrarlamasın diye ekledik */
+  border-radius: 0.7rem 0.7rem 0 0; /* yuvarlaklık yukarılarda var ama altta olmadığı için 0 0 verdik.. */
+  position: relative; /* resmin pozisyonunu değiştirdik */
 }
 
 .person-bg-transparent {
   background-color: rgba(255, 0, 0, 0.5);
-  position: absolute;
+  position: absolute; /* resmin pozisyonunu değiştirdik */
   left: 0;
   top: 0;
   right: 0;
@@ -34,6 +34,8 @@
   position: relative;
   top: -50px;
   z-index: 11;
+  /* kırmızılı resmin önüne çıkarabilmek için 10 dan büyük 
+     bir değer vermiş olduk */
 }
 
 .person-avatar img {
@@ -55,8 +57,8 @@
 
 .person-stat {
   margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* yanyana gelsinler diye bunu ekledik */
+  justify-content: space-between; /* yazıların arasını eşit ölçüde açar */
 }
 
 .person-stat div {

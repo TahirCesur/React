@@ -20,7 +20,7 @@ src klasörünün içindeki assets img klasöründen alınarak {} yoluyla yapıl
 /*
 <img src={require("../../assets/img/image3.jpg").default}/>
 syntax ı 18. satırda olduğu gibi... {require("../../assets/img/image3.jpg").default} şeklinde olmalı..
-Bunu da 25. satırda Image olarak const a tanımlamış olduk...
+Klasörleri tek tek geçerek yol eklenir...
 */
 const Image = () => {
   console.log(require("../../assets/img/image3.jpg"));

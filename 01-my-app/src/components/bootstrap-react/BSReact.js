@@ -9,6 +9,9 @@ import {
   Container,
 } from "react-bootstrap";
 
+// React-Bootstrap ten aldığımız formatta değişiklik yapmıyoruz..
+// Sadece 2. satırda olduğu gibi importları yapamız gerekiyor...
+
 const BSReact = () => {
   return (
     <Container>

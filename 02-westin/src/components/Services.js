@@ -4,7 +4,7 @@ import Service from "./Service";
 
 // Hazır aldığımız formattan sadece class ları className yapmış olduk...
 // <SectionTitle aciklama="best feature" baslik="Services"/>
-// 15. satıra ekledik ve açıklama ve başlık kısımlarını burada dldurmuş olduk
+// 15. satıra ekledik ve açıklama ve başlık kısımlarını burada doldurmuş olduk
 // 20, 27, 34, 41, 48, 56. satırlara service ile resim açıklma başlık ekledik...
 const Services = () => {
   return (

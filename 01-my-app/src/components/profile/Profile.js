@@ -53,4 +53,4 @@ const Profile = (props) => {
 
 export default Profile;
 
-/* props ları normal de başka dosyadan gödermiştik fakat proje haline gelince gittiler */
+/* props ları normal de başka dosyadan göndermiştik fakat proje haline gelince gittiler */

@@ -12,11 +12,11 @@ const Birthday = () => {
   const [persons, setPersons] = useState(data);
 
   const temizle = () => {
-    setPersons([]);
+    setPersons([]); // Boş lduğunu göstermek için [ ] kullanmış olduk...
   };
 
   const yukle = () => {
-    setPersons(data);
+    setPersons(data); // Bilgileri tekrar çekmek için data dan çağırmış oluyoruz...
   };
 
   return (
@@ -45,3 +45,5 @@ export default Birthday;
 
 //! Not ; Bilgileri data klasöründeki persons.json dosyasından almış olduk.....
 //* Resimleri de public klasöründeki img klasöründen almış olduk...
+
+//? 28. satırda ise persons.json dan map yardımıyla döngü kurmamız gerekiyor...

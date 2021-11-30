@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
-// 1. olarak useState import edilmeli...
+//* 1. olarak useState import edilmeli...
 
-// 2. olarak useState tanımlanmalı
-// sayac değişkeni, değeri saklar, setSayac ise değeri değiştiren method tur.
+//* 2. olarak useState tanımlanmalı
+//* sayac değişkeni, değeri saklar, setSayac ise değeri değiştiren method tur.
 
 const State = () => {
   const [sayac, setSayac] = useState(0);
@@ -21,8 +21,8 @@ const State = () => {
       console.log(sayac);
     };
 
-    Console da görürüz ama component render edilmez...
-    State componentin her defasında render edilmesini sağlar...
+    *Console da görürüz ama component render edilmez...
+    *State componentin her defasında render edilmesini sağlar...
   */
 
   return (

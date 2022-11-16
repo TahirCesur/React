@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 // Hazır aldığımızdan class olan yerleri className olarak yeniledik...

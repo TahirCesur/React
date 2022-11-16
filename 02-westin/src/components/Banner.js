@@ -19,8 +19,8 @@ const Banner = () => {
                   <span className="base-color">A </span>{" "}
                   <span
                     className="element"
-                    data-elements="UI Designer.,Web Designer.,Web Developer."
-                  ></span>
+                    data-elements="UI Designer.,Web Designer.,Web Developer.">
+                  </span>
                 </h1>
                 <a href="#" className="pill-button-01">
                   Download Cv

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import data from "../../data/products.json"; //! data kalsöründeki json dosyasını import ettik..
 import Product from "./Product";
 
-// Döngü kurarak 6 adet kulaklığın json dosyasından gelmesini sağlayacağız...
+// Döngü kurarak 7 adet kulaklığın json dosyasından gelmesini sağlayacağız...
 const ProductList = () => {
   return (
     <Container className="my-5">

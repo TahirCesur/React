@@ -6,7 +6,7 @@ import data from "../../data/persons.json";
 //* 1. olarak useState import edilmeli...
 
 //* 2. olarak useState tanımlanmalı
-//* persons değişkeni, değeri saklar, setPersons ise değeri değiştiren method tur.
+//! persons değişkeni, değeri saklar, setPersons ise değeri değiştiren methodtur.
 
 const Birthday = () => {
   const [persons, setPersons] = useState(data);
@@ -27,8 +27,13 @@ const Birthday = () => {
 
         {persons.map((item) => {
           const { id, image, name, age } = item;
-          return <Person image={image} name={name} age={age} key={id} />;
+          return (
+            <>
+              <Person image={image} name={name} age={age} key={id} />;
+            </>
+          );
         })}
+
         <Button variant="danger" onClick={temizle}>
           Temizle
         </Button>
@@ -45,5 +50,5 @@ export default Birthday;
 
 //! Not ; Bilgileri data klasöründeki persons.json dosyasından almış olduk.....
 //* Resimleri de public klasöründeki img klasöründen almış olduk...
-
 //? 28. satırda ise persons.json dan map yardımıyla döngü kurmamız gerekiyor...
+//? Temizle ve Yükle tam çalışması için persons.map döngüsüne aldık ki sistem çalışsın...

@@ -1,3 +1,5 @@
+/* eslint-disable eqeqeq */
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import "./clock3.css";
 import moment from "moment";

@@ -24,4 +24,5 @@ const Person = (props) => {
 export default Person;
 
 //! Card.Body parent inin içinde 3 child mevcut... Img, Title, Text
-//* Img ayrı yapıp Title ve Text i bir <div></div> içine alırsak istediğimizi yapmış oluruz...
+//? Img ayrı yapıp Title ve Text i bir <div></div> içine alırsak istediğimizi yapmış oluruz...
+//todo ms-3 yanyana gelen bitişik şeylerin arasını açmak için kullanılır.

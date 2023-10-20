@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 //* 1. olarak useState import edilmeli...
 
 //* 2. olarak useState tanımlanmalı
-//* sayac değişkeni, değeri saklar, setSayac ise değeri değiştiren method tur.
+//* sayac değişkeni, değeri saklar, setSayac ise değeri değiştiren methodtur.
 
 const State = () => {
   const [sayac, setSayac] = useState(0);
@@ -13,8 +13,9 @@ const State = () => {
     setSayac(sayac + 1);
   };
 
-  /* State yerine normal bir değişken ile yapılabilir mi? Hayır yapamayız...
+  //! State yerine normal bir değişken ile yapılabilir mi? Hayır yapamayız...
 
+  /*
     var sayac = 0;
     const artir = () => {
       sayac = sayac + 1;

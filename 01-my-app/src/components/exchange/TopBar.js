@@ -11,16 +11,16 @@ const TopBar = () => {
     return (
         <Navbar bg="primary" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">Exchange</Navbar.Brand>
-                <Nav className="ms-auto">
+                <Navbar.Brand href="#home" className="text-white">Exchange</Navbar.Brand>
+                <Nav className="ms-auto text-white">
                     <Badge bg="warning" text="dark">
                         $
-                    </Badge>
-                    {usd}₺ &nbsp;&nbsp;
+                    </Badge>&nbsp;
+                    {usd}&nbsp;₺ &nbsp;&nbsp;
                     <Badge bg="danger" text="dark">
                         €
-                    </Badge>
-                    {eur}₺
+                    </Badge>&nbsp;
+                    {eur}&nbsp;₺
                 </Nav>
             </Container>
         </Navbar>
@@ -28,3 +28,5 @@ const TopBar = () => {
 };
 
 export default TopBar;
+
+//! Badge renkli buton kodlarıdır...

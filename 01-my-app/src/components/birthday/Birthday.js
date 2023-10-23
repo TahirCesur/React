@@ -29,16 +29,16 @@ const Birthday = () => {
           const { id, image, name, age } = item;
           return (
             <>
-              <Person image={image} name={name} age={age} key={id} />;
+              <Person image={image} name={name} age={age} key={id} />
             </>
           );
         })}
 
-        <Button variant="danger" onClick={temizle}>
+        <Button variant="danger" onClick={temizle} className="mt-3 ">
           Temizle
         </Button>
 
-        <Button variant="success" onClick={yukle}>
+        <Button variant="success" onClick={yukle} className="mt-3 ms-2">
           Yükle
         </Button>
       </Card.Body>

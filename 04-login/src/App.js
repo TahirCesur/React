@@ -3,7 +3,6 @@ import {StoreContext} from "./store";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import {isCompositeComponentWithType} from "react-dom/test-utils";
 
 const App = () => {
     const [user, setUser] = useState({});

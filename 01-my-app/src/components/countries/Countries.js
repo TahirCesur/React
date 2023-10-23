@@ -4,8 +4,8 @@ import axios from "axios";
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [sortType, setSortType] = useState(false);
+    const [loading, setLoading] = useState(false); // Spinner için gerekli
+    const [sortType, setSortType] = useState(false); // Sıralama için kullnılır
 
     const sirala = (key) => {
         countries.sort((a, b) => {
@@ -21,29 +21,28 @@ const Countries = () => {
                 result = -1;
             }
 
-            if (sortType) result *= -1;
+            if (sortType) result *= -1; // tersine sıralama için -1 ile çarptık.
             setSortType(!sortType);
 
             return result;
         });
 
-        // [...countries] bu işleme shallow copy denir
-        setCountries([...countries]);
+        setCountries([...countries]); // [...countries] bu işleme shallow copy denir...
     };
 
     useEffect(() => {
-        setLoading(true);
+        setLoading(true); // Spinner için gerekli
         axios("https://restcountries.com/v2/all")
             .then((resp) => {
                 setCountries(resp.data);
                 console.log(resp.data);
-                setLoading(false);
+                setLoading(false); // Spinner için gerekli
             })
             .catch((err) => {
                 console.log(err);
-                setLoading(false);
+                setLoading(false); // Spinner için gerekli
             });
-    }, []);
+    }, []); // axios default u json olduğu için fetch te ki gibi json a çevirmiyoruz...
 
     return (
         <Container className="mt-5">
@@ -94,3 +93,5 @@ const Countries = () => {
 };
 
 export default Countries;
+
+//! {country.area}km<sup>2</sup> 2 yukarıda metrekare görünsün diye <sup> kullanılır...

@@ -15,7 +15,7 @@ const NoteForm = (props) => {
         setNote("");
     };
 
-    return (
+    return ( 
         <div style={{backgroundColor: "#efefef", padding: "1rem"}}>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

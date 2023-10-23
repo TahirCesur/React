@@ -10,14 +10,21 @@ import {
 import {StoreContext} from "../../store";
 
 const Content = () => {
+    
+    const [eur, setEur] = useState(0);
     const [usd, setUsd] = useState(0);
     const [tl, setTl] = useState(0);
     const contex = useContext(StoreContext);
     const kurlar = contex.kurlar;
 
-    const cevir = () => {
-        const tlDeger = (usd / kurlar.USD).toFixed(2);
-        setTl(tlDeger);
+    const cevirUsd = () => {
+        const tlDegerUsd = (usd / kurlar.EUR).toFixed(2);
+        setTl(tlDegerUsd);
+    };
+
+    const cevirEur = () => {
+        const tlDegerEur = (eur / kurlar.USD).toFixed(2);
+        setTl(tlDegerEur);
     };
 
     return (
@@ -30,18 +37,33 @@ const Content = () => {
                             value={usd}
                             onChange={(e) => setUsd(e.target.value)}
                         />
+                        <InputGroup.Text>€</InputGroup.Text>
+                        <Button
+                            variant="outline-secondary"
+                            id="button-addon2"
+                            onClick={cevirUsd}
+                        >
+                            TL'ye çevir
+                        </Button>
+                    </InputGroup>
+                    <InputGroup className="mb-3">
+                        <FormControl
+                            type="number"
+                            value={eur}
+                            onChange={(e) => setEur(e.target.value)}
+                        />
                         <InputGroup.Text>$</InputGroup.Text>
                         <Button
                             variant="outline-secondary"
                             id="button-addon2"
-                            onClick={cevir}
+                            onClick={cevirEur}
                         >
                             TL'ye çevir
                         </Button>
                     </InputGroup>
                 </Col>
                 <Col xs={12}>
-                    <h3 className="text-center">{tl}₺</h3>
+                    <h3 className="text-center">{tl}&nbsp;₺</h3>
                 </Col>
             </Row>
         </Container>

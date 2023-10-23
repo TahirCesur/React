@@ -105,3 +105,10 @@ const Form3 = () => {
 };
 
 export default Form3;
+
+//! const handleChange = (e) => {
+//!   const {name, value} = e.target;
+//!   setFormData({...formData, [name]: value});
+//! };
+
+//? [name]: value} burası adı soyadı emaili ve tel i saklaycak.. Yani tel: 0123456 gibi...

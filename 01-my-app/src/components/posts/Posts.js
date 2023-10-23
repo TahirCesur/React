@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import {Container, Button} from "react-bootstrap";
 import Post from "./Post";
 import axios from "axios";
-
+  
 const Posts = () => {
     const [posts, setPosts] = useState([]);
 
@@ -16,7 +16,7 @@ const Posts = () => {
         axios
             .post("https://jsonplaceholder.typicode.com/posts", yeniYazi)
             .then((resp) => {
-                setPosts([yeniYazi, ...posts]);
+                setPosts([yeniYazi, ...posts]); //! yer değiştirsek eklenilen obje sona gider...
             });
     };
 

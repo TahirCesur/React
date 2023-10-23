@@ -64,3 +64,5 @@ const Clock3 = (props) => {
 };
 
 export default Clock3;
+
+//! Dikkat :  {second % 2 == 0 ? ":" : " "} ternary ile saniyenin 2 ye bölümünden kalan 0 ise 2 noktayı göster değilse gösterme

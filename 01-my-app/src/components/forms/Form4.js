@@ -40,8 +40,8 @@ const Form4 = () => {
         setMesaj("");
         console.log(formData);
 
-        // Burası fake API. Normalde burada fetch ya da axios gibi bir kütüphane ile API a bağlanılması gerekir.
-        // Ancak biz setTimeout ile fake bir API bağlantısı yaptık
+        //! Burası fake API. Normalde burada fetch ya da axios gibi bir kütüphane ile API a bağlanılması gerekir.
+        //? Ancak biz setTimeout ile fake bir API bağlantısı yaptık.
         setTimeout(() => {
             setMesaj("Bilgileriniz başarılı bir şekilde gönderildi");
             setLoading(false);
@@ -104,12 +104,16 @@ const Form4 = () => {
                         <Form.Group className="mb-3" controlId="telefon">
                             <Form.Label>Telefonunuz</Form.Label>
                             <Form.Control
+                                required
                                 name="telefon"
                                 type="text"
                                 placeholder="Telefonunuzu giriniz"
                                 value={formData.telefon}
                                 onChange={handleChange}
                             />
+                            <Form.Control.Feedback type="invalid">
+                                Geçerli bir telefon giriniz
+                            </Form.Control.Feedback>
                         </Form.Group>
 
                         <Button variant="info" type="submit" disabled={loading}>

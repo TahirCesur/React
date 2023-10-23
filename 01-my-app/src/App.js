@@ -28,7 +28,7 @@ import UseEffectPage from "./pages/UseEffectPage";
 import UserCardsPage from "./pages/UserCardsPage";
 import ToDoAppPage from "./pages/ToDoAppPage";
 import ExchangePage from "./pages/ExchangePage";
-import { StoreContext } from "./store";
+import { StoreContext } from "./store"; // store klasöründen geldi...
 import axios from "axios";
 
 function App() {
@@ -131,3 +131,19 @@ function App() {
 }
 
 export default App;
+
+/*
+const [kurlar, setKurlar] = useState({});
+
+  useEffect(() => {
+    axios("https://api.frankfurter.app/latest?from=try").then((resp) => {
+      console.log(resp.data);
+      setKurlar(resp.data.rates);
+    });
+  }, []);
+
+  return (
+    <StoreContext.Provider value={{ kurlar }}></StoreContext.Provider> */
+
+//! Bu kodlar Exchange için gerekli oldu ve hepsini sarmalamasını sağladık context hook ile
+//? Store klasörü de exchange ile ilgili ve orada boş contex oluşturuldu...

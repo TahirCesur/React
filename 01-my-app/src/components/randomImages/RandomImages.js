@@ -5,7 +5,7 @@ const RandomImages = () => {
     const [sayi, setSayi] = useState(1);
 
     const sayiUret = () => {
-        const rasgeleSayi = Math.floor(Math.random() * 10 + 1);
+        const rasgeleSayi = Math.floor(Math.random() * 10 + 1); // Formül girildi. Math.random()*(max-min+1)+min
         setSayi(rasgeleSayi);
     };
 

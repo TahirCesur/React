@@ -14,7 +14,7 @@ const ChangeTitle = () => {
   }, [sayac]);
 
   return (
-    <div>
+    <div className="justify-content-center mt-5">
       <h2>{sayac} kere tıkladın</h2>
       <button onClick={artir}>TIKLA</button>
     </div>
@@ -22,3 +22,5 @@ const ChangeTitle = () => {
 };
 
 export default ChangeTitle;
+
+//! Başlığı değiştime uygulaması... Title

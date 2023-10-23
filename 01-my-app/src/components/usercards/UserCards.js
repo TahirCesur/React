@@ -8,7 +8,7 @@ const UserCards = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://api.github.com/users")
+    fetch(`https://api.github.com/users`)
       .then((resp) => resp.json())
       .then((data) => {
         setUsers(data);
